@@ -1,0 +1,18 @@
+name = "ems-alghadjed"
+main = "src/worker.js"
+compatibility_date = "2026-10-01"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "ems-club-db"
+database_id = "dd7f87d9-12c2-45c0-859e-fcd9bb1a83d8"
+
+# Image upload is optional until you create R2 bucket and enable billing if requested.
+# [[r2_buckets]]
+# binding = "MEDIA"
+# bucket_name = "ems-club-media"
